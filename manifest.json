@@ -1,28 +1,28 @@
 {
-    "manifest_version": 3,
-    "name": "Simple Reader Mode",
-    "version": "1.0",
-    "description": "Extract main content and display in a reader-friendly format",
-    "permissions": ["activeTab", "scripting", "unlimitedStorage"],
-    "action": {
-      "default_icon": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
-      }
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "icons": {
+  "manifest_version": 3,
+  "name": "Simple Reader Mode",
+  "version": "1.4",
+  "description": "Extract main content and display in a reader-friendly format with additional features",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
       "16": "icon16.png",
       "48": "icon48.png",
       "128": "icon128.png"
-    },
-    "web_accessible_resources": [
-      {
-        "resources": ["readability.js", "reader-mode.js"],
-        "matches": ["<all_urls>"]
-      }
-    ]
-  }
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["readability.js", "reader-mode.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
